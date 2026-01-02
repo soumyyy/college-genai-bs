@@ -11,7 +11,13 @@ export async function registerRoutes(
   
   app.get(api.tasks.list.path, async (req, res) => {
     const tasks = await storage.getTasks();
+    // Return empty skeletons if solutions are meant to be hidden
     res.json(tasks);
+  });
+
+  app.post("/api/tasks/submit", async (req, res) => {
+    // Dummy endpoint for student submission
+    res.json({ message: "Assignment submitted successfully!" });
   });
 
   app.get(api.tasks.get.path, async (req, res) => {
