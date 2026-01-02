@@ -2,21 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "package.json",
+            "src": "dist/index.cjs",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "/assets/(.*)",
-            "dest": "/assets/$1"
-        },
-        {
             "src": "/(.*)",
-            "dest": "/dist/index.cjs"
+            "dest": "dist/index.cjs"
         }
-    ],
-    "env": {
-        "NODE_ENV": "production"
-    }
+    ]
 }
