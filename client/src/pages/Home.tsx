@@ -105,8 +105,8 @@ export default function Home() {
             </span>
           </h1>
           <div className="hero-sub flex flex-col items-center space-y-2 text-muted-foreground font-medium tracking-wide text-sm md:text-base">
-            <p>Submitted by: <span className="text-primary font-bold">Student Name</span></p>
-            <p>Roll Number: <span className="text-primary font-bold">123456789</span></p>
+            <p>Submitted by: <span className="text-primary font-bold">Soumya Maheshwari</span></p>
+            <p>Roll Number: <span className="text-primary font-bold">R036</span></p>
           </div>
         </div>
 
