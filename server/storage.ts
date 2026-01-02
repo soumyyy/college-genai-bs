@@ -32,34 +32,34 @@ export class MemStorage implements IStorage {
         description: "Identify and map at least five real-world applications of Generative AI.",
         content: [
           {
-            category: "Content Creation",
-            use_case: "Automated Marketing Copy",
-            model: "GPT-4 / Claude 3",
-            impact: "Drastically reduces time-to-market for marketing campaigns; raises concerns about content saturation."
+            category: "Healthcare",
+            use_case: "Drug Discovery & Protein Folding",
+            model: "AlphaFold (Google DeepMind) / DiffDock",
+            impact: "Reduces drug development time from years to months; enables personalized medicine."
           },
           {
-            category: "Code Generation",
-            use_case: "Intelligent Code Completion",
-            model: "GitHub Copilot (Codex)",
-            impact: "Increases developer productivity by ~55%; creates legal gray areas regarding open-source licensing."
+            category: "Software Development",
+            use_case: "Automated Code Generation & Refactoring",
+            model: "GitHub Copilot (OpenAI Codex)",
+            impact: "Boosts developer productivity by 55%; democratizes coding for non-technical users."
           },
           {
-            category: "Drug Discovery",
-            use_case: "Protein Structure Prediction",
-            model: "AlphaFold 2",
-            impact: "Accelerates biological research and drug development timelines from years to months."
+            category: "Creative Arts",
+            use_case: "High-Fidelity Image & Asset Generation",
+            model: "Midjourney / Stable Diffusion / DALL-E 3",
+            impact: "Revolutionizes digital art and marketing; raises complex copyright and displacement issues."
           },
           {
-            category: "Image Synthesis",
-            use_case: "Stock Photo Generation",
-            model: "Midjourney v6 / Stable Diffusion XL",
-            impact: "Democratizes high-quality visual creation; threatens livelihoods of traditional stock photographers."
+            category: "Education",
+            use_case: "Personalized Tutoring & Content Simplification",
+            model: "GPT-4 / Khanmigo",
+            impact: "Provides 24/7 adaptive learning support; helps bridge educational gaps globally."
           },
           {
-            category: "Voice Synthesis",
-            use_case: "Personalized Audiobooks",
-            model: "ElevenLabs / Voicebox",
-            impact: "Enables scalable voiceovers and accessibility features; heightens risks of deepfake scams."
+            category: "Customer Service",
+            use_case: "Autonomous Multilingual Support Agents",
+            model: "Claude 3 / GPT-4o",
+            impact: "Offers instant, empathetic support in 100+ languages; significantly lowers operational costs."
           }
         ]
       },
@@ -71,87 +71,98 @@ export class MemStorage implements IStorage {
           {
             year: "2018",
             model: "BERT (Google)",
-            feature: "Bidirectional Encoder Representations",
-            breakthrough: "Revolutionized NLP by understanding context from both left and right sides of a token."
+            feature: "Bidirectional Encoding",
+            breakthrough: "Introduced deep bidirectional context, significantly improving search and understanding."
           },
           {
             year: "2019",
             model: "GPT-2 (OpenAI)",
-            feature: "1.5B Parameters, Unsupervised Learning",
-            breakthrough: "Demonstrated zero-shot task transfer; generated coherent multi-paragraph text."
+            feature: "Zero-shot capabilities",
+            breakthrough: "Showed that scaling parameters leads to impressive text generation without task-specific training."
           },
           {
             year: "2020",
             model: "GPT-3 (OpenAI)",
-            feature: "175B Parameters, Few-Shot Learning",
-            breakthrough: "Showed that scaling parameters leads to emergent abilities; performed tasks with just a few examples."
+            feature: "Few-shot learning",
+            breakthrough: "Established the paradigm of in-context learning through massive scale (175B parameters)."
           },
           {
             year: "2021",
-            model: "DALL-E (OpenAI)",
-            feature: "Text-to-Image Generation",
-            breakthrough: "Connected semantic concepts in text to visual generation, opening the door for creative AI."
+            model: "CLIP / DALL-E (OpenAI)",
+            feature: "Multimodal connectivity",
+            breakthrough: "Proved AI could effectively link text descriptions with visual concepts."
           },
           {
             year: "2022",
-            model: "ChatGPT / InstructGPT",
-            feature: "RLHF (Reinforcement Learning from Human Feedback)",
-            breakthrough: "Aligned models with human intent, making them conversational, safe, and widely usable."
+            model: "PaLM (Google) / Stable Diffusion",
+            feature: "Chain-of-thought / Open Weights",
+            breakthrough: "PaLM showed logical reasoning; Stable Diffusion democratized high-end image generation."
           },
           {
             year: "2023",
-            model: "GPT-4 (OpenAI) / LLaMA (Meta)",
-            feature: "Multimodality & Open Weights",
-            breakthrough: "GPT-4 handled image/text inputs; LLaMA democratized access to powerful LLMs for researchers."
+            model: "GPT-4 (OpenAI) / Gemini (Google)",
+            feature: "Advanced Multimodality",
+            breakthrough: "Reached human-level performance on professional benchmarks; integrated native vision/audio."
           }
         ]
       },
       {
         taskNumber: "Task 3",
         title: "Platform Exploration",
-        description: "Experiments with pre-trained foundation models via no-code interfaces.",
+        description: "Hands-on results from exploring foundation models via interactive platforms.",
         content: {
           experiments: [
             {
               platform: "OpenAI Playground",
-              task: "Prompt Engineering (Story Generation)",
-              prompt: "Write a micro-story about a robot who discovers it loves gardening, in the style of Hemingway.",
-              result: "The robot knelt in the dirt. It was good dirt. The sun was hot on its metal casing. It planted the seed. It waited. Growth was slow. But it was honest work. The robot felt something like peace."
+              task: "Story Generation",
+              prompt: "Generate a story about a sentient clock.",
+              result: "The clock didn't just tick; it remembered. It had watched three generations of the Miller family grow. When the house fell silent at night, it would occasionally skip a second, just to see if the world would notice. It never did, until the youngest Miller whispered, 'I saw that.'"
+            },
+            {
+              platform: "Google MakerSuite",
+              task: "Summarization",
+              input: "Detailed research on Climate Change mitigation strategies...",
+              result: "The research emphasizes three pillars: rapid decarbonization of the energy sector, massive investment in carbon capture technologies, and international policy alignment to meet 1.5C targets."
             },
             {
               platform: "Hugging Face Spaces",
-              task: "Summarization (BART)",
-              input: "Research abstract on Quantum Computing...",
-              result: "Quantum computing leverages superposition and entanglement to solve problems intractable for classical computers, promising breakthroughs in cryptography and material science."
-            },
-            {
-              platform: "Replicate (Stable Diffusion)",
-              task: "Text-to-Image",
-              prompt: "A futuristic city built inside a giant glass bottle floating in space, synthwave color palette.",
-              result: "[Image placeholder: Neon lights, floating structures, starry background enclosed in glass]"
+              task: "Bullet-to-Paragraph",
+              input: "• AI for good • Ethics • Safety • Alignment",
+              result: "The pursuit of 'AI for Good' necessitates a rigorous framework centered on ethics and safety. To ensure beneficial outcomes, researchers focus on the critical challenge of alignment—mapping AI objectives directly to human values."
             }
           ]
         }
       },
       {
         taskNumber: "Task 4",
-        title: "Literature Review",
-        description: "Analysis of 'What Are Foundation Models?' and 'The Age of Generative AI'.",
+        title: "Literature Review & Analysis",
+        description: "Summary and critical analysis based on Stanford CRFM and OpenAI literature.",
         content: {
+          summaries: [
+            {
+              title: "What Are Foundation Models? (Stanford)",
+              summary: "Stanford researchers define foundation models as large-scale models trained on broad data that can be adapted to a wide range of downstream tasks. They represent a paradigm shift from task-specific AI to general-purpose, adaptable systems."
+            },
+            {
+              title: "The Age of Generative AI (OpenAI)",
+              summary: "This article discusses the transformative potential of GenAI across industries, highlighting how AI is moving from a tool for prediction to a tool for creation, fundamentally altering the nature of cognitive labor."
+            }
+          ],
           q_and_a: [
             {
               question: "What makes a foundation model different from a traditional NLP model?",
-              answer: "Traditional NLP models were typically 'narrow AI,' trained on specific datasets for specific tasks (e.g., sentiment analysis on movie reviews). Foundation models (like GPT-4) are trained on broad, massive data at scale and can be adapted (fine-tuned) to a wide variety of downstream tasks they weren't explicitly trained for, exhibiting emergent behavior."
+              answer: "Scale and Adaptability. Traditional models were specialized (e.g., just for translation). Foundation models are massive, pre-trained on diverse data, and can perform hundreds of tasks with minimal fine-tuning, often displaying 'emergent' abilities like reasoning."
             },
             {
-              question: "Where do you see GenAI impacting your discipline (Software Engineering)?",
-              answer: "It is fundamentally changing the coding workflow. From intelligent autocomplete (Copilot) to generating boilerplate code, unit tests, and documentation. It shifts the engineer's role from writing syntax to architecting systems and reviewing AI-generated logic."
+              question: "Where do you see GenAI impacting your discipline (AI/Software Engineering)?",
+              answer: "It transforms the development lifecycle. Engineers now act more as 'Architects' and 'Reviewers' rather than syntax-writers. It automates documentation, unit testing, and bug detection, allowing focus on higher-level system design."
             },
             {
               question: "What ethical or societal concerns arise?",
-              answer: "Key concerns include: 1) Bias/Fairness: Models propagating stereotypes found in training data. 2) Hallucination: Generating confident but false information. 3) Copyright: Training on creators' work without consent. 4) Displacement: Automation of creative and cognitive labor."
+              answer: "Primary concerns include Data Privacy (training on sensitive data), Misinformation (deepfakes), Bias (algorithmic prejudice), and Economic Displacement (automation of professional roles)."
             }
-          ]
+          ],
+          conclusion: "Generative AI and Foundation Models represent the most significant leap in computing history. By understanding their evolution and ethical constraints, we can harness their power to solve complex global challenges while mitigating risks to society."
         }
       }
     ];
